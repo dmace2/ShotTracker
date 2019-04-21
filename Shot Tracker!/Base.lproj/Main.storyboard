@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pz1-ap-yOt">
-    <device id="retina4_0" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pz1-ap-yOt">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,53 +15,53 @@
             <objects>
                 <viewController title="Distance From Net" id="BYZ-38-t0r" customClass="DistanceController" customModule="Shot_Tracker_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Distance Calculator">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icebackground" translatesAutoresizingMaskIntoConstraints="NO" id="cEg-ug-l0A">
-                                <rect key="frame" x="0.0" y="17" width="320" height="591"/>
+                                <rect key="frame" x="0.0" y="17" width="375" height="690.00000000000045"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueLineViewNoZone" translatesAutoresizingMaskIntoConstraints="NO" id="TgC-o2-mK1">
-                                <rect key="frame" x="10" y="331.5" width="300" height="226.5"/>
+                                <rect key="frame" x="10" y="389" width="355" height="268"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="TgC-o2-mK1" secondAttribute="height" multiplier="755:570" id="Fgr-lM-yIe"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="f67-UQ-kb5" userLabel="Calculations">
-                                <rect key="frame" x="10" y="74" width="300" height="247.5"/>
+                                <rect key="frame" x="10" y="74" width="355" height="305"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="754" text="Shot Length: ?ft" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6An-y5-bE0">
-                                        <rect key="frame" x="47" y="0.0" width="206" height="37"/>
+                                        <rect key="frame" x="74.5" y="0.0" width="206" height="45.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" verticalCompressionResistancePriority="753" text="Required goalie blocking width: ?ft" textAlignment="center" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lrS-2i-0vn">
-                                        <rect key="frame" x="0.0" y="42" width="300" height="37"/>
+                                        <rect key="frame" x="0.0" y="50.5" width="355" height="45.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="752" text="Required goalie blocking height: ?ft" textAlignment="center" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uib-DR-L1o">
-                                        <rect key="frame" x="0.0" y="84" width="300" height="37"/>
+                                        <rect key="frame" x="0.0" y="101" width="355" height="45.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="752" text="Goal width decrease per foot: ?in" textAlignment="center" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wj8-4L-A0N">
-                                        <rect key="frame" x="0.0" y="126" width="300" height="37"/>
+                                        <rect key="frame" x="0.0" y="151.5" width="355" height="45.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Goal height decrease per foot: ?in" textAlignment="center" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ef-Zn-wwL">
-                                        <rect key="frame" x="0.0" y="168" width="300" height="37"/>
+                                        <rect key="frame" x="0.0" y="202" width="355" height="46"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W Visible Net: ?ft, H Visible Net: ?ft" textAlignment="center" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xZm-WU-q6D">
-                                        <rect key="frame" x="0.0" y="210" width="300" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="253" width="355" height="52"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -105,20 +105,20 @@
             <objects>
                 <viewController storyboardIdentifier="MainMenu" title="Main Menu" id="CDV-nG-sXR" customClass="MainMenuController" customModule="Shot_Tracker_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mrd-2S-Gpj" userLabel="Main Menu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icebackground" translatesAutoresizingMaskIntoConstraints="NO" id="oyt-Av-v0q">
-                                <rect key="frame" x="0.0" y="4" width="320" height="598"/>
+                                <rect key="frame" x="0.0" y="4" width="375" height="697.00000000000045"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="266" text="Shot Tracker!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JhR-nG-Wrr">
-                                <rect key="frame" x="28" y="64" width="264" height="56.5"/>
+                                <rect key="frame" x="28" y="64" width="319" height="102"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="80"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gb-FQ-zag" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="19" y="170.5" width="282" height="137"/>
+                                <rect key="frame" x="19" y="216" width="337" height="164"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0gb-FQ-zag" secondAttribute="height" multiplier="282:137" id="DyX-75-5Hv"/>
@@ -133,7 +133,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUY-rR-12y" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="19" y="359.5" width="282" height="137"/>
+                                <rect key="frame" x="19" y="432" width="337" height="163.5"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="AUY-rR-12y" secondAttribute="height" multiplier="282:137" id="ddf-Mw-Bcw"/>
@@ -149,14 +149,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rr7-Dd-Kbr" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="85" y="318.5" width="150" height="30"/>
+                                <rect key="frame" x="85" y="391" width="205" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Clear All Shots (Temp)">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQn-sK-Fhj" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="19" y="528" width="282" height="30"/>
+                                <rect key="frame" x="19" y="627" width="337" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Sign Up/Log In">
@@ -212,14 +212,14 @@
             <objects>
                 <viewController storyboardIdentifier="per1" title="Period 1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N8Y-XG-Noz" customClass="FBShotTrackerViewController" customModule="Shot_Tracker_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2sI-sp-IQa" userLabel="period1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icebackground" translatesAutoresizingMaskIntoConstraints="NO" id="ySt-iO-f6V">
-                                <rect key="frame" x="0.0" y="22" width="320" height="675"/>
+                                <rect key="frame" x="0.0" y="22" width="375" height="774.00000000000045"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luv-dL-Eto" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="10" y="74" width="142.5" height="30"/>
+                                <rect key="frame" x="10" y="74" width="170" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Possession">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -229,7 +229,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbs-tt-Our" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="167.5" y="74" width="142.5" height="30"/>
+                                <rect key="frame" x="195" y="74" width="170" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Rebound to Corner">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -239,7 +239,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3I-E1-i5D" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="167.5" y="114" width="142.5" height="30"/>
+                                <rect key="frame" x="195" y="114" width="170" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Weak Side">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -249,7 +249,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liH-0N-hl6" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="10" y="154" width="145" height="30"/>
+                                <rect key="frame" x="10" y="154" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Same Sequence">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -259,7 +259,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhV-M6-eXk" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="10" y="211" width="145" height="30"/>
+                                <rect key="frame" x="10" y="262.5" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Undo Last Puck">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -269,7 +269,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjG-cC-ozh" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="165" y="211" width="145" height="30"/>
+                                <rect key="frame" x="192.5" y="262.5" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Dead Sequence">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -279,7 +279,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lb1-2O-zfh" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="165" y="154" width="145" height="30"/>
+                                <rect key="frame" x="192.5" y="154" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Goal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -289,7 +289,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIn-Zw-1or" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="10" y="114" width="142.5" height="30"/>
+                                <rect key="frame" x="10" y="114" width="170" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Square">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -299,7 +299,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rinkZone" translatesAutoresizingMaskIntoConstraints="NO" id="N4F-Se-BRy">
-                                <rect key="frame" x="10" y="251" width="300" height="258"/>
+                                <rect key="frame" x="10" y="302.5" width="355" height="305.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="N4F-Se-BRy" secondAttribute="height" multiplier="307:264" id="S5u-OJ-jCW"/>
                                 </constraints>
@@ -358,26 +358,26 @@
             <objects>
                 <viewController title="Login Screen" id="hpX-sk-SN9" userLabel="Login Screen" customClass="SignInController" customModule="Shot_Tracker_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bdI-fU-XUg" userLabel="Sign In/Up">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icebackground" translatesAutoresizingMaskIntoConstraints="NO" id="PWF-B5-9uP">
-                                <rect key="frame" x="0.0" y="14" width="320" height="604"/>
+                                <rect key="frame" x="0.0" y="14" width="375" height="703.00000000000045"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hMO-WM-0dV">
-                                <rect key="frame" x="40" y="301" width="240" height="30"/>
+                                <rect key="frame" x="40" y="350.5" width="295" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Mn-ot-gOS">
-                                <rect key="frame" x="40" y="339" width="240" height="30"/>
+                                <rect key="frame" x="40" y="388.5" width="295" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wrg-B1-W6e" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="40" y="377" width="240" height="30"/>
+                                <rect key="frame" x="40" y="426.5" width="295" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -387,7 +387,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXb-pa-Ziy" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="40" y="415" width="240" height="30"/>
+                                <rect key="frame" x="40" y="464.5" width="295" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Sign Up (New Users Only)">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -397,10 +397,10 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="firebaselogo" translatesAutoresizingMaskIntoConstraints="NO" id="kWj-gi-N2h">
-                                <rect key="frame" x="40" y="89" width="240" height="204"/>
+                                <rect key="frame" x="40" y="89" width="295" height="253.5"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzi-QZ-y39" customClass="GIDSignInButton">
-                                <rect key="frame" x="40" y="452.5" width="240" height="30"/>
+                                <rect key="frame" x="40" y="502" width="295" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -472,14 +472,14 @@
             <objects>
                 <viewController storyboardIdentifier="finshots" title="Final Shots" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6ts-cN-84n" userLabel="Final Shots" customClass="FBShotTrackerViewController" customModule="Shot_Tracker_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jLG-Nr-wU9" userLabel="Final Shots">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icebackground" translatesAutoresizingMaskIntoConstraints="NO" id="jjX-6v-ABn">
-                                <rect key="frame" x="0.0" y="22" width="320" height="547"/>
+                                <rect key="frame" x="0.0" y="22" width="375" height="646.00000000000045"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krI-TH-m8V" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="10" y="114" width="145" height="30"/>
+                                <rect key="frame" x="10" y="114" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="muG-PX-qSw"/>
@@ -492,7 +492,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vri-Yk-IuU" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="165" y="114" width="145" height="30"/>
+                                <rect key="frame" x="192.5" y="114" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Weak Side">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -502,13 +502,13 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rinkZone" translatesAutoresizingMaskIntoConstraints="NO" id="Lzz-rp-FB6">
-                                <rect key="frame" x="10" y="251" width="300" height="258"/>
+                                <rect key="frame" x="10" y="302.5" width="355" height="305.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Lzz-rp-FB6" secondAttribute="height" multiplier="307:264" id="9A4-v8-R9e"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isH-bI-0YN" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="10" y="74" width="145" height="30"/>
+                                <rect key="frame" x="10" y="74" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Possession">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -518,7 +518,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Y8-gk-cIA" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="165" y="74" width="145" height="30"/>
+                                <rect key="frame" x="192.5" y="74" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Rebound to Corner">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -528,7 +528,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AiD-lD-kVZ" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="87.5" y="154" width="145" height="30"/>
+                                <rect key="frame" x="101.5" y="154" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="hAt-qu-hDR"/>
@@ -541,7 +541,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsr-J2-LX1" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="6.5" y="192" width="307" height="30"/>
+                                <rect key="frame" x="6.5" y="192" width="362" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Select a Period">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -556,22 +556,22 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="2v9-QZ-M5H">
-                                <rect key="frame" x="10" y="230" width="300" height="16"/>
+                                <rect key="frame" x="10" y="261.5" width="355" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Period = ?" textAlignment="center" lineBreakMode="clip" minimumFontSize="3" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I2y-ms-daR">
-                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="16"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="86" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Period Shots = ?" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="3" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QNr-Ee-kBG">
-                                        <rect key="frame" x="75.5" y="0.0" width="118" height="16"/>
+                                        <rect key="frame" x="89" y="0.0" width="139.5" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Shots = ?" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="3" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mit-Xh-oII">
-                                        <rect key="frame" x="196.5" y="0.0" width="103.5" height="16"/>
+                                        <rect key="frame" x="231.5" y="0.0" width="123.5" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -579,10 +579,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ir6-Qo-NGv">
-                                <rect key="frame" x="6" y="222" width="308" height="0.0"/>
+                                <rect key="frame" x="6" y="222" width="363" height="0.0"/>
                                 <subviews>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnZ-e0-b6N" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="307" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="362" height="0.0"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="All"/>
                                         <userDefinedRuntimeAttributes>
@@ -595,7 +595,7 @@
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjq-Ih-ty6" userLabel="P1" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="307" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="362" height="0.0"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Period 1"/>
                                         <userDefinedRuntimeAttributes>
@@ -608,7 +608,7 @@
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMG-Xa-U34" userLabel="P2" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="307" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="362" height="0.0"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Period 2"/>
                                         <userDefinedRuntimeAttributes>
@@ -621,7 +621,7 @@
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSc-AI-ce4" userLabel="P3" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="307" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="362" height="0.0"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Period 3"/>
                                         <userDefinedRuntimeAttributes>
@@ -634,7 +634,7 @@
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5b-fI-wFr" userLabel="OT" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="307" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="362" height="0.0"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Overtime"/>
                                         <userDefinedRuntimeAttributes>
@@ -717,27 +717,27 @@
             <objects>
                 <viewController title="Instructions" id="sFB-Lp-Avv" userLabel="Instructions" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6XP-pz-aot" userLabel="Distance Calculator">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icebackground" translatesAutoresizingMaskIntoConstraints="NO" id="jzg-nG-KG3">
-                                <rect key="frame" x="0.0" y="17" width="320" height="591"/>
+                                <rect key="frame" x="0.0" y="17" width="375" height="690.00000000000045"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Instructions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uIg-Ve-3eZ">
-                                <rect key="frame" x="5" y="75" width="310" height="72"/>
+                                <rect key="frame" x="5" y="75" width="365" height="72"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RJt-Eb-IhA">
-                                <rect key="frame" x="10" y="174" width="300" height="752"/>
+                                <rect key="frame" x="10" y="174" width="355" height="644.5"/>
                                 <string key="text">Click to place a puck and then a goalie on the screen. Once you are done, the app will calculate figures for you. You can then move the puck and the goalie by tapping where you want them to go.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVA-QN-KqF" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="10" y="528" width="300" height="30"/>
+                                <rect key="frame" x="10" y="627" width="355" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -776,20 +776,20 @@
             <objects>
                 <viewController storyboardIdentifier="per2" title="Period 2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dA3-s8-Nan" userLabel="Period 2" customClass="FBShotTrackerViewController" customModule="Shot_Tracker_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="flW-Wk-dYS" userLabel="period1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icebackground" translatesAutoresizingMaskIntoConstraints="NO" id="8vk-LK-j2w">
-                                <rect key="frame" x="0.0" y="22" width="320" height="675"/>
+                                <rect key="frame" x="0.0" y="22" width="375" height="774.00000000000045"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rinkZone" translatesAutoresizingMaskIntoConstraints="NO" id="4zC-r6-RRB">
-                                <rect key="frame" x="10" y="251" width="300" height="258"/>
+                                <rect key="frame" x="10" y="302.5" width="355" height="305.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4zC-r6-RRB" secondAttribute="height" multiplier="307:264" id="WQH-lf-EB6"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMa-XG-pye" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="10" y="74" width="145" height="30"/>
+                                <rect key="frame" x="10" y="74" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Possession">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -799,7 +799,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ued-bV-714" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="165" y="74" width="145" height="30"/>
+                                <rect key="frame" x="192.5" y="74" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Rebound to Corner">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -809,7 +809,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZB-4x-Jo6" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="10" y="114" width="145" height="30"/>
+                                <rect key="frame" x="10" y="114" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Square">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -819,7 +819,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UuW-4Q-Hk9" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="165" y="114" width="145" height="30"/>
+                                <rect key="frame" x="192.5" y="114" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Weak Side">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -829,7 +829,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06L-zU-nNR" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="10" y="154" width="145" height="30"/>
+                                <rect key="frame" x="10" y="154" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Same Sequence">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -839,7 +839,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjf-9V-hhy" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="165" y="154" width="145" height="30"/>
+                                <rect key="frame" x="192.5" y="154" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Goal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -849,7 +849,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0a-9s-Jr7" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="165" y="211" width="145" height="30"/>
+                                <rect key="frame" x="192.5" y="262.5" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Dead Sequence">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -859,7 +859,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0P-tg-doH" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="10" y="211" width="145" height="30"/>
+                                <rect key="frame" x="10" y="262.5" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Undo Last Puck">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -922,7 +922,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pz1-ap-yOt" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ng9-8K-O8c">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -939,18 +939,18 @@
             <objects>
                 <viewController storyboardIdentifier="GameSelector" title="Game Selector" id="tCK-Cg-Jh0" customClass="GameSelectorViewController" customModule="Shot_Tracker_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YAU-VK-mze" userLabel="Game Selector">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gSy-g3-jXs">
-                                <rect key="frame" x="0.0" y="64" width="320" height="554"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="653"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GameDataCell" rowHeight="60" id="3rk-6s-pKN" customClass="GameCellTableViewCell" customModule="Shot_Tracker_" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3rk-6s-pKN" id="E8j-SN-lwL">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Fbz-Cw-yOc">
@@ -1035,23 +1035,23 @@
             <objects>
                 <viewController title="Account Settings" id="FJo-az-UF7" userLabel="Account" customClass="AccoutSettingsViewController" customModule="Shot_Tracker_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xaf-ON-B7h" userLabel="Sign In/Up">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icebackground" translatesAutoresizingMaskIntoConstraints="NO" id="TRC-ar-sGv">
-                                <rect key="frame" x="0.0" y="14" width="320" height="604"/>
+                                <rect key="frame" x="0.0" y="14" width="375" height="703.00000000000045"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="firebaselogo" translatesAutoresizingMaskIntoConstraints="NO" id="GFh-1f-meh">
-                                <rect key="frame" x="40" y="89" width="240" height="111"/>
+                                <rect key="frame" x="40" y="89" width="295" height="210"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Email: ??" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="30" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aGq-Py-9od">
-                                <rect key="frame" x="40" y="180" width="240" height="36"/>
+                                <rect key="frame" x="40" y="279" width="295" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNf-l2-Q1x" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="40" y="528" width="240" height="30"/>
+                                <rect key="frame" x="40" y="627" width="295" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Log Out">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1093,20 +1093,20 @@
             <objects>
                 <viewController storyboardIdentifier="per3" title="Period 3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vm2-ig-wyx" userLabel="Period 3" customClass="FBShotTrackerViewController" customModule="Shot_Tracker_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jdf-XE-QBQ" userLabel="period1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icebackground" translatesAutoresizingMaskIntoConstraints="NO" id="RF3-yk-wIR">
-                                <rect key="frame" x="0.0" y="22" width="320" height="675"/>
+                                <rect key="frame" x="0.0" y="22" width="375" height="774.00000000000045"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rinkZone" translatesAutoresizingMaskIntoConstraints="NO" id="KKn-Uy-ZUh">
-                                <rect key="frame" x="10" y="251" width="300" height="258"/>
+                                <rect key="frame" x="10" y="302.5" width="355" height="305.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="KKn-Uy-ZUh" secondAttribute="height" multiplier="307:264" id="DPC-3G-xxW"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyP-QY-JAF" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="10" y="74" width="145" height="30"/>
+                                <rect key="frame" x="10" y="74" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Possession">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1116,7 +1116,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oX3-Ua-rDc" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="165" y="74" width="145" height="30"/>
+                                <rect key="frame" x="192.5" y="74" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Rebound to Corner">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1126,7 +1126,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSb-Ft-v9q" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="10" y="114" width="145" height="30"/>
+                                <rect key="frame" x="10" y="114" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Square">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1136,7 +1136,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vix-zR-7sH" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="165" y="114" width="145" height="30"/>
+                                <rect key="frame" x="192.5" y="114" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Weak Side">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1146,7 +1146,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Pv-dr-tjq" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="10" y="154" width="145" height="30"/>
+                                <rect key="frame" x="10" y="154" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Same Sequence">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1156,7 +1156,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3St-vp-7k8" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="165" y="154" width="145" height="30"/>
+                                <rect key="frame" x="192.5" y="154" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Goal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1166,7 +1166,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dd7-br-lxQ" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="165" y="211" width="145" height="30"/>
+                                <rect key="frame" x="192.5" y="262.5" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Dead Sequence">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1176,7 +1176,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAp-LJ-l00" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="10" y="211" width="145" height="30"/>
+                                <rect key="frame" x="10" y="262.5" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Undo Last Puck">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1238,20 +1238,20 @@
             <objects>
                 <viewController storyboardIdentifier="per4" title="Overtime" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HqJ-91-rig" customClass="FBShotTrackerViewController" customModule="Shot_Tracker_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cZV-ev-Hl9" userLabel="period1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icebackground" translatesAutoresizingMaskIntoConstraints="NO" id="pdu-kP-esF">
-                                <rect key="frame" x="0.0" y="22" width="320" height="675"/>
+                                <rect key="frame" x="0.0" y="22" width="375" height="774.00000000000045"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rinkZone" translatesAutoresizingMaskIntoConstraints="NO" id="rMd-JP-ejb">
-                                <rect key="frame" x="10" y="251" width="300" height="258"/>
+                                <rect key="frame" x="10" y="302.5" width="355" height="305.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rMd-JP-ejb" secondAttribute="height" multiplier="307:264" id="Llb-Eh-e3H"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z52-Jb-gE8" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="10" y="74" width="145" height="30"/>
+                                <rect key="frame" x="10" y="74" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Possession">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1261,7 +1261,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctu-pL-dLi" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="165" y="74" width="145" height="30"/>
+                                <rect key="frame" x="192.5" y="74" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Rebound to Corner">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1271,7 +1271,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pf8-wc-rJN" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="10" y="114" width="145" height="30"/>
+                                <rect key="frame" x="10" y="114" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Square">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1281,7 +1281,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dza-fh-gjy" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="165" y="114" width="145" height="30"/>
+                                <rect key="frame" x="192.5" y="114" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Weak Side">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1291,7 +1291,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLj-bz-95e" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="10" y="154" width="145" height="30"/>
+                                <rect key="frame" x="10" y="154" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Same Sequence">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1301,7 +1301,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB4-gp-n1c" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="165" y="154" width="145" height="30"/>
+                                <rect key="frame" x="192.5" y="154" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Goal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1311,7 +1311,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmW-JU-tcT" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="165" y="211" width="145" height="30"/>
+                                <rect key="frame" x="192.5" y="262.5" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Dead Sequence">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1321,7 +1321,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZzH-wO-j2b" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="10" y="211" width="145" height="30"/>
+                                <rect key="frame" x="10" y="262.5" width="172.5" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Undo Last Puck">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1380,12 +1380,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="blueLineViewNoZone" width="123.83999633789062" height="109.44000244140625"/>
+        <image name="blueLineViewNoZone" width="860" height="760"/>
         <image name="firebaselogo" width="800" height="600"/>
-        <image name="icebackground" width="312" height="229"/>
+        <image name="icebackground" width="2738" height="1825"/>
         <image name="puck" width="641" height="641"/>
         <image name="puck_view" width="30" height="30"/>
-        <image name="rinkZone" width="338.25" height="265.5"/>
+        <image name="rinkZone" width="451" height="354"/>
         <image name="show_shot_view" width="30" height="30"/>
     </resources>
 </document>
