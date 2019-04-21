@@ -148,13 +148,6 @@
                                     <segue destination="tCK-Cg-Jh0" kind="show" id="jPG-aY-wnG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rr7-Dd-Kbr" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
-                                <rect key="frame" x="85" y="391" width="205" height="30"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <state key="normal" title="Clear All Shots (Temp)">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQn-sK-Fhj" customClass="custoButton" customModule="Shot_Tracker_" customModuleProvider="target">
                                 <rect key="frame" x="19" y="627" width="337" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -175,16 +168,13 @@
                             <constraint firstItem="oyt-Av-v0q" firstAttribute="top" secondItem="mrd-2S-Gpj" secondAttribute="topMargin" constant="-60" id="7gV-Zv-j8L"/>
                             <constraint firstItem="vqX-Jc-Muc" firstAttribute="bottom" secondItem="AUY-rR-12y" secondAttribute="bottom" constant="71.5" id="8Nj-iM-P4p"/>
                             <constraint firstItem="0gb-FQ-zag" firstAttribute="leading" secondItem="vqX-Jc-Muc" secondAttribute="leading" constant="19" id="92e-bv-yLH"/>
-                            <constraint firstItem="Rr7-Dd-Kbr" firstAttribute="top" secondItem="0gb-FQ-zag" secondAttribute="bottom" constant="11" id="B6g-0F-XK2"/>
                             <constraint firstItem="AUY-rR-12y" firstAttribute="top" secondItem="0gb-FQ-zag" secondAttribute="bottom" constant="52" id="E4b-XP-lU3"/>
                             <constraint firstItem="0gb-FQ-zag" firstAttribute="top" secondItem="JhR-nG-Wrr" secondAttribute="bottom" constant="50" id="E9E-E3-qry"/>
                             <constraint firstItem="AUY-rR-12y" firstAttribute="width" secondItem="pQn-sK-Fhj" secondAttribute="width" id="E9I-m6-wvi"/>
-                            <constraint firstItem="Rr7-Dd-Kbr" firstAttribute="leading" secondItem="vqX-Jc-Muc" secondAttribute="leading" constant="85" id="PLb-c5-FTT"/>
                             <constraint firstItem="0gb-FQ-zag" firstAttribute="centerX" secondItem="vqX-Jc-Muc" secondAttribute="centerX" id="PQb-Qq-pl5"/>
                             <constraint firstItem="vqX-Jc-Muc" firstAttribute="bottom" secondItem="pQn-sK-Fhj" secondAttribute="bottom" constant="10" id="QbR-h1-PJ3"/>
                             <constraint firstItem="AUY-rR-12y" firstAttribute="centerX" secondItem="vqX-Jc-Muc" secondAttribute="centerX" id="RqI-Dq-CPy"/>
                             <constraint firstItem="oyt-Av-v0q" firstAttribute="centerX" secondItem="0gb-FQ-zag" secondAttribute="centerX" id="Y7h-iI-JWR"/>
-                            <constraint firstItem="AUY-rR-12y" firstAttribute="top" secondItem="Rr7-Dd-Kbr" secondAttribute="bottom" constant="11" id="Z3i-dq-HFw"/>
                             <constraint firstItem="vqX-Jc-Muc" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AUY-rR-12y" secondAttribute="trailing" id="kaE-vX-bzU"/>
                             <constraint firstItem="AUY-rR-12y" firstAttribute="leading" secondItem="vqX-Jc-Muc" secondAttribute="leading" constant="19" id="kbC-UM-3md"/>
                             <constraint firstItem="pQn-sK-Fhj" firstAttribute="centerX" secondItem="vqX-Jc-Muc" secondAttribute="centerX" id="l4N-uz-IXV"/>
@@ -192,7 +182,6 @@
                             <constraint firstItem="vqX-Jc-Muc" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0gb-FQ-zag" secondAttribute="trailing" id="pnj-ei-uK8"/>
                             <constraint firstItem="vqX-Jc-Muc" firstAttribute="bottom" secondItem="oyt-Av-v0q" secondAttribute="bottom" constant="-34" id="s4F-Y1-W9d"/>
                             <constraint firstItem="JhR-nG-Wrr" firstAttribute="leading" secondItem="vqX-Jc-Muc" secondAttribute="leading" constant="28" id="ylW-GC-uMC"/>
-                            <constraint firstItem="vqX-Jc-Muc" firstAttribute="trailing" secondItem="Rr7-Dd-Kbr" secondAttribute="trailing" constant="85" id="yp7-HA-faL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vqX-Jc-Muc"/>
                     </view>
