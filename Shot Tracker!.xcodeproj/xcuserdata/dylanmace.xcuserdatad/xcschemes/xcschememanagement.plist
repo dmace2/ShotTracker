@@ -7,17 +7,40 @@
 		<key>Shot Tracker! WatchKit App (Notification).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>30</integer>
 		</dict>
 		<key>Shot Tracker! WatchKit App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>29</integer>
 		</dict>
 		<key>Shot Tracker!.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>28</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>F072FAFF1FAA0E3100A8D484</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F072FB131FAA0E3200A8D484</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F072FB1E1FAA0E3200A8D484</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F072FB271FAA0E3200A8D484</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
