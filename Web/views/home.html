@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Shot Tracker </title>
+  <link rel="stylesheet" href="stylesheets/topnavbar.css">
+  <link rel="stylesheet" href="stylesheets/materialbox.css">
+  <link rel="shortcut icon" href="assets/AppIcon.png">
+  <script src="https://www.w3schools.com/lib/w3data.js"></script> <!-- for embedding nav bar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icon library for hamburger -->
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBajHV1YFkFtBTqDssD1NpOpxSWAw6mP-k",
+    authDomain: "shottracker-715c1.firebaseapp.com",
+    databaseURL: "https://shottracker-715c1.firebaseio.com",
+    projectId: "shottracker-715c1",
+    storageBucket: "shottracker-715c1.appspot.com",
+    messagingSenderId: "389127784369"
+  };
+  firebase.initializeApp(config);
+  </script>
+
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav" style="padding: 0px;">
+    <a class="active navListItem">Home</a>
+    <a class="navListItem">Single Shot Tracker</a>
+    <a class="navListItem">Shot Tracker (Game)</a>
+    <a class="navListItem" id="acctlink">Account Settings</a>
+    <!-- <a id="loginlink" href="login.html">Login</a> -->
+
+    <a href="javascript:void(0);" class="icon" onclick="checkResponsive()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script type="text/javascript" src="scripts/navbar.js"></script>
+
+
+
+  <div class="box">
+
+    <div class="title">SHOT TRACKER</div>
+    <div class="para">Welcome to Shot Tracker! There are two main parts of this website: one is a single shot tracker, whereas the other is a game tracker which requires a login. Please get started!</div>
+  </div>
+
+  <!-- <script type="text/javascript" src = "scripts/globalfunctions.js"></script> -->
+
+
+</body>
+</html>

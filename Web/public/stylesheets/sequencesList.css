@@ -1,0 +1,61 @@
+body {
+  background: url("../assets/icebackground.jpg");
+  color: rgba(0,0,0,0.87);
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.sequencesList {
+  position: relative;
+  //added for them to be next
+  display:inline block;
+  float: right;
+
+  background-color: rgba(119,119,119,.95);
+}
+#seqTop{
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+#sequenceHolders{
+  overflow-y: auto;
+}
+
+ .sequencesList a {
+  float: left;
+  display: inline;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.sequencesList .icon {
+  display: none;
+}
+
+
+  .sequencesList a {
+    display: none;
+    background-color: rgb(255,255,255);
+  }
+
+  .sequencesList a.icon {
+    float: right;
+    display: block;
+    background-color: transparent;
+  }
+
+  .sequencesList.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .sequencesList.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Account Settings </title>
+  <link rel="shortcut icon" href="assets/AppIcon.png">
+  <link rel="stylesheet" href="stylesheets/topnavbar.css">
+  <link rel="stylesheet" href="stylesheets/materialbox.css">
+  <link rel="stylesheet" href="stylesheets/accountsettings.css">
+  <script src="https://www.w3schools.com/lib/w3data.js"></script> <!-- for embedding nav bar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icon library for hamburger -->
+
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBajHV1YFkFtBTqDssD1NpOpxSWAw6mP-k",
+      authDomain: "shottracker-715c1.firebaseapp.com",
+      databaseURL: "https://shottracker-715c1.firebaseio.com",
+      projectId: "shottracker-715c1",
+      storageBucket: "shottracker-715c1.appspot.com",
+      messagingSenderId: "389127784369"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav" style="padding: 0px;">
+    <a class="active navListItem">Home</a>
+    <a class="navListItem">Single Shot Tracker</a>
+    <a class="navListItem">Shot Tracker (Game)</a>
+    <a class="navListItem" id="acctlink">Account Settings</a>
+    <!-- <a id="loginlink" href="login.html">Login</a> -->
+
+    <a href="javascript:void(0);" class="icon" onclick="checkResponsive()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script type="text/javascript" src="scripts/navbar.js"></script>
+
+  <div class="box">
+    <div class="title"> ACCOUNT SETTINGS </div>
+    <img id="userimg" alt="userPhoto" style="width: 35%">
+    <div id="username" class = "title userName"></div>
+    <div id="useremail" class="title userEmail"></div>
+    <button class="button" id="logoutbutton">Log Out</button>
+  </div>
+
+
+  <!-- <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script> -->
+  <!-- <script type="text/javascript" src = "scripts/firebase.js"></script> -->
+  <script type="text/javascript" src = "scripts/globalfunctions.js"></script>
+  <script type="text/javascript" src="scripts/accountsettings.js"></script>
+
+
+</body>
+</html>

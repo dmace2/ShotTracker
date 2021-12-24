@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Game Selector </title>
+  <link rel="shortcut icon" href="assets/AppIcon.png">
+  <link rel="stylesheet" href="stylesheets/topnavbar.css">
+  <link rel="stylesheet" href="stylesheets/materialbox.css">
+  <link rel="stylesheet" href="stylesheets/shottracker.css">
+  <script src="https://www.w3schools.com/lib/w3data.js"></script> <!-- for embedding nav bar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icon library for hamburger -->
+
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="stylesheets/table/util.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/table/main.css">
+
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBajHV1YFkFtBTqDssD1NpOpxSWAw6mP-k",
+    authDomain: "shottracker-715c1.firebaseapp.com",
+    databaseURL: "https://shottracker-715c1.firebaseio.com",
+    projectId: "shottracker-715c1",
+    storageBucket: "shottracker-715c1.appspot.com",
+    messagingSenderId: "389127784369"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav" style="padding: 0px;">
+    <a class="active navListItem">Home</a>
+    <a class="navListItem">Single Shot Tracker</a>
+    <a class="navListItem">Shot Tracker (Game)</a>
+    <a class="navListItem" id="acctlink">Account Settings</a>
+    <!-- <a id="loginlink" href="login.html">Login</a> -->
+
+    <a href="javascript:void(0);" class="icon" onclick="checkResponsive()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script type="text/javascript" src="scripts/navbar.js"></script>
+
+
+
+  <div class="box">
+
+    <div class="title">GAME SELECTOR</div>
+    <div class="para">Select a game from your saved games. If there are none, add a new game!</div>
+    <div id="creategame" class="button">Add New Game</div>
+
+    <div class="container-table100">
+      <div class="wrap-table100">
+        <div class="table" id="table">
+
+          <div class="row header">
+            <div class="cell">
+              Game Title
+            </div>
+            <div class="cell">
+              Game Date
+            </div>
+            <div class="cell"> <!-- empty cell for delete <button type="button" name="button"></button>-->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="scripts/GameModel.js"></script>
+  <script type="text/javascript" src="scripts/gameselector.js"></script>
+
+</body>
+</html>

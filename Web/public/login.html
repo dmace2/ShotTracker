@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log In</title>
+  <link rel="shortcut icon" href="assets/AppIcon.png">
+
+  <!-- update the version number as needed -->
+
+  <script src="scripts/jquery-3.3.1.js"></script>
+  <link rel="stylesheet" href="stylesheets/topnavbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icon library for hamburger -->
+  <link rel="stylesheet" href="stylesheets/login.css">
+  <script src="https://www.w3schools.com/lib/w3data.js"></script> <!-- for embedding nav bar -->
+
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBajHV1YFkFtBTqDssD1NpOpxSWAw6mP-k",
+      authDomain: "shottracker-715c1.firebaseapp.com",
+      databaseURL: "https://shottracker-715c1.firebaseio.com",
+      projectId: "shottracker-715c1",
+      storageBucket: "shottracker-715c1.appspot.com",
+      messagingSenderId: "389127784369"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+</head>
+
+
+<body>
+
+  <div class="topnav" id="myTopnav" style="padding: 0px;">
+    <a class="active navListItem">Home</a>
+    <a class="navListItem">Single Shot Tracker</a>
+    <a class="navListItem">Shot Tracker (Game)</a>
+    <a class="navListItem" id="acctlink">Login</a>
+    <!-- <a id="loginlink" href="login.html">Login</a> -->
+
+    <a href="javascript:void(0);" class="icon" onclick="checkResponsive()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script type="text/javascript" src="scripts/navbar.js"></script>
+
+
+  <div class="materialContainer">
+
+
+   <div class="box" >
+
+      <div class="title">LOGIN</div>
+
+      <div class="input">
+         <label for="name">Email Address</label>
+         <input type="text" name="name" id="name">
+         <span class="spin"></span>
+      </div>
+
+      <div class="input">
+         <label for="pass">Password</label>
+         <input type="password" name="pass" id="pass">
+         <span class="spin"></span>
+      </div>
+
+      <div class="button login">
+         <button id="loginbutton" class="loginbutton"><span>LOG IN</span> </button>
+         <button id="googlebutton" class="googlebutton"><span>GOOGLE AUTH</span> </button>
+      </div>
+
+   </div>
+
+   <div class="overbox">
+      <div class="material-button alt-2"><span class="shape"></span></div>
+
+      <div class="title">SIGN UP</div>
+
+      <div class="input">
+         <label for="regname">User Email</label>
+         <input type="text" name="regname" id="regname">
+         <span class="spin"></span>
+      </div>
+
+      <div class="input">
+         <label for="regpass">Password</label>
+         <input type="password" name="regpass" id="regpass">
+         <span class="spin"></span>
+      </div>
+
+      <div class="input">
+         <label for="reregpass">Repeat Password</label>
+         <input type="password" name="reregpass" id="reregpass">
+         <span class="spin"></span>
+      </div>
+
+      <div class="button">
+         <button id = "signupbutton"><span>SIGN UP</span></button>
+      </div>
+
+
+   </div>
+
+</div>
+
+  <script type="text/javascript" src = "scripts/animation.js"></script>
+  <script src = "scripts/firebaselogin.js"></script>
+  <!-- <script type="text/javascript" src = "scripts/globalfunctions.js"></script> -->
+
+
+</body>
+</html>

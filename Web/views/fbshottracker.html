@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Game Tracker </title>
+  <link rel="shortcut icon" href="assets/AppIcon.png">
+  <link rel="stylesheet" href="stylesheets/topnavbar.css">
+  <link rel="stylesheet" href="stylesheets/materialbox.css">
+  <link rel="stylesheet" href="stylesheets/sequencesList.css">
+  <script src="https://www.w3schools.com/lib/w3data.js"></script> <!-- for embedding nav bar -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="scripts/rainbowVis.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBajHV1YFkFtBTqDssD1NpOpxSWAw6mP-k",
+    authDomain: "shottracker-715c1.firebaseapp.com",
+    databaseURL: "https://shottracker-715c1.firebaseio.com",
+    projectId: "shottracker-715c1",
+    storageBucket: "shottracker-715c1.appspot.com",
+    messagingSenderId: "389127784369"
+  };
+  firebase.initializeApp(config);
+  </script>
+
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav" style="padding: 0px;">
+    <a class="active navListItem">Home</a>
+    <a class="navListItem">Single Shot Tracker</a>
+    <a class="navListItem">Shot Tracker (Game)</a>
+    <a class="navListItem" id="acctlink">Account Settings</a>
+    <!-- <a id="loginlink" href="login.html">Login</a> -->
+
+    <a href="javascript:void(0);" class="icon" onclick="checkResponsive()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script type="text/javascript" src="scripts/navbar.js"></script>
+
+
+
+  <div class="box" id="contentBox">
+
+    <div class="title">Game Tracker</div>
+    <div class="para">Click to start. Click once in a new location is a pass, double click is skated. Once a squence is over, choose an outcome or mark as obsolete.</div>
+    <div class="para"> ** Make Sure You Close Out of This Game on Other Devices! ** </div>
+    <div class="para inline "> Select a Period: <select name="period" class="periodSelector" id="periodSelect">
+      <option value="Period 1">Period 1</option>
+      <option value="Period 2">Period 2</option>
+      <option value="Period 3">Period 3</option>
+      <option value="Overtime">Overtime</option>
+
+    </select>
+  </div>
+  <div id="trackShots">
+    <div class=" dataGrid two">
+      <button class="button outcome" id="Possession">Possession Save</button>
+      <button class="button outcome" id="Rebound to Corner">Rebound to Corner</button>
+      <button class="button outcome" id="Square">Square Side Rebound (no second shot)</button>
+      <button class="button outcome" id="Weak Side">Weak Side Rebound (no second shot)</button>
+      <button class="button outcome" id="Same Sequence">Rebound (keep as same sequence)</button>
+      <button class="button outcome" id="Goal">Goal</button>
+    </div>
+    <div class=" dataGrid two remove">
+      <button class="button" id="undo">Undo Last Puck</button>
+      <button class="button" id="dead">Dead Sequence (no shot)</button>
+    </div>
+  </div>
+  <div id="showShots" style="display:none">
+    <div class=" dataGrid two">
+      <button class="button view" id="Possession">Possession Save</button>
+      <button class="button view" id="Rebound to Corner">Rebound to Corner</button>
+      <button class="button view" id="Square">Square Side Rebound (no second shot)</button>
+      <button class="button view" id="Weak Side">Weak Side Rebound (no second shot)</button>
+    </div>
+    <div class="dataGrid one">
+      <button class="button view" id="Goal">Goal</button>
+    </div>
+  </div>
+  <canvas class="fbpicture" id="c" width="860px" height="760px"> </canvas>
+  <div class="sequencesList responsive" id="sequences">
+    <p id="seqTop" style="font-weight: 900; font-size: 20px;">Sequences</p>
+    <!-- <a style="text-align:center">Sequences</a> -->
+    <div id="sequenceHolders">
+    </div>
+    <!-- <a>Single Shot Tracker <i style="float: right"class="colorIcon fas fa-square"></i></a>
+    <a>Single Shot Tracker <i style="float: right"class="colorIcon fas fa-square"></i></a>
+    <a>Single Shot Tracker <i style="float: right"class="colorIcon fas fa-square"></i></a>
+    <a>Single Shot Tracker <i style="float: right"class="colorIcon fas fa-square"></i></a>
+    <a>Single Shot Tracker <i style="float: right"class="colorIcon fas fa-square"></i></a>
+    <a>Single Shot Tracker <i style="float: right"class="colorIcon fas fa-square"></i></a>
+    <a>Single Shot Tracker <i style="float: right"class="colorIcon fas fa-square"></i></a>
+    <a>Single Shot Tracker <i style="float: right"class="colorIcon fas fa-square"></i></a>
+    <a>Single Shot Tracker <i style="float: right"class="colorIcon fas fa-square"></i></a>
+    <a>Single Shot Tracker <i style="float: right"class="colorIcon fas fa-square"></i></a>
+    <a>Single Shot Tracker <i style="float: right"class="colorIcon fas fa-square"></i></a>
+    <a>Single Shot Tracker <i style="float: right"class="colorIcon fas fa-square"></i></a>
+    <a>Single Shot Tracker <i style="float: right"class="colorIcon fas fa-square"></i></a>
+    <a>Single Shot Tracker <i style="float: right"class="colorIcon fas fa-square"></i></a>
+    <a>Single Shot Tracker <i style="float: right"class="colorIcon fas fa-square"></i></a>
+    <a>Single Shot Tracker <i style="float: right"class="colorIcon fas fa-square"></i></a> -->
+
+  </div>
+  <div class="dataGrid one">
+    <button class="button" id="trackShow"><i id="trackerIcon" class="fas fa-chart-line"></i>View Shot Progressions</button>
+  </div>
+
+</div>
+
+<script src="scripts/GameModel.js"></script>
+<script src="scripts/gametracker.js"></script>
+
+
+</body>
+</html>

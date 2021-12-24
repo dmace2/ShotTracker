@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Single Shot Selector </title>
+  <link rel="shortcut icon" href="assets/AppIcon.png">
+  <link rel="stylesheet" href="stylesheets/topnavbar.css">
+  <link rel="stylesheet" href="stylesheets/materialbox.css">
+  <script src="https://www.w3schools.com/lib/w3data.js"></script> <!-- for embedding nav bar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icon library for hamburger -->
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBajHV1YFkFtBTqDssD1NpOpxSWAw6mP-k",
+    authDomain: "shottracker-715c1.firebaseapp.com",
+    databaseURL: "https://shottracker-715c1.firebaseio.com",
+    projectId: "shottracker-715c1",
+    storageBucket: "shottracker-715c1.appspot.com",
+    messagingSenderId: "389127784369"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav" style="padding: 0px;">
+    <a class="active navListItem">Home</a>
+    <a class="navListItem">Single Shot Tracker</a>
+    <a class="navListItem">Shot Tracker (Game)</a>
+    <a class="navListItem" id="acctlink">Login</a>
+    <!-- <a id="loginlink" href="login.html">Login</a> -->
+
+    <a href="javascript:void(0);" class="icon" onclick="checkResponsive()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script type="text/javascript" src="scripts/navbar.js"></script>
+
+
+
+  <div class="box" id="contentBox">
+
+    <div class="title">SINGLE SHOT DATA</div>
+    <div class="para">Click on the ice below to add a puck and/or a goalie to that location. By doing so, the program will calculate data points based on these locations.</div>
+    <div class=" dataGrid one">
+      <div class=" dataHolder">
+        <div class = "title small"> Shot Length: <div class = "para data" id="shotLength"> ? ft </div> </div>
+      </div>
+    </div>
+    <div class=" dataGrid two">
+      <div class=" dataHolder">
+        <div class = "title small"> Required Goalie Blocking Width: <div class = "para data" id="goalBlockWidth"> ? ft </div> </div>
+      </div>
+      <div class=" dataHolder">
+        <div class = "title small"> Required Goalie Blocking Height: <div class = "para data"id="goalBlockHeight"> ? ft </div> </div>
+      </div>
+    </div>
+    <div class=" dataGrid two">
+      <div class=" dataHolder">
+        <div class = "title small"> Goal Width Decrease per Foot: <div class = "para data" id="decreaseWidthInches"> ? in </div> </div>
+      </div>
+      <div class=" dataHolder">
+        <div class = "title small"> Goal Height Decrease per Foot: <div class = "para data" id="decreaseHeightInches"> ? in </div> </div>
+      </div>
+    </div>
+    <div class=" dataGrid two">
+      <div class=" dataHolder">
+        <div class = "title small"> Width of Visible Net: <div class = "para data" id="widthViewable"> ? ft </div> </div>
+      </div>
+      <div class=" dataHolder">
+        <div class = "title small"> Height of Visible Net: <div class = "para data"> 4.0 ft </div> </div>
+      </div>
+    </div>
+
+    <canvas class = "gamepicture" id="c" width="860px" height="760px"> </canvas>
+
+
+  </div>
+
+
+<!-- <script type="text/javascript" src = "scripts/globalfunctions.js"></script> -->
+<script src="scripts/singleshot.js"></script>
+
+</body>
+</html>

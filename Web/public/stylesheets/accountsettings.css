@@ -1,0 +1,19 @@
+#userimg{
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 35%;
+  background: rgba(255,255,255,.95);
+  border-radius: 50%; /* do I want a circular image? */
+  padding: 50px 50px 40px 40px;
+  background: #fff;
+}
+
+.userName{
+  font-size: 40px;
+}
+
+.userEmail{
+  font-size: 28px;
+}

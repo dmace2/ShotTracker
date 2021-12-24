@@ -1,0 +1,177 @@
+html, body {
+			width: 100%;
+			height: 100%;
+			margin: 0px;
+			border: 0;
+}
+
+body {
+  background: url("../assets/icebackground.jpg");
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  width: 75%;
+  opacity: 1;
+	padding: 20px;
+  background-color: rgba(255,255,255,.9);
+  ;
+	margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.dataGrid{
+  /* background-color: #dddddd; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+.dataHolder{
+  background: rgba(238, 238, 238,.9);
+  margin: 0px;
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+  ;
+}
+
+.one{
+  grid-template-columns: 1fr;
+}
+
+.two{
+  grid-template-columns: 1fr 1fr;
+}
+
+.remove{
+	margin-top: 100px;
+
+}
+.title {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+  width: 100%;
+  text-align: center;
+  /* line-height: 46px; */
+  font-size: 70px;
+  font-weight: 600;
+  color: #777777;
+}
+
+.para{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+  font-size: 18px;
+  margin-top: 50px;
+  text-align: center;
+  max-width: 90%;
+  line-height: 30px;
+  padding: 5px;
+}
+.inline{
+	line-height: normal;
+}
+
+.small{
+  font-size: 18px;
+}
+
+.data{
+  line-height: normal;
+  margin: auto;
+  font-weight: normal;
+  position: relative;
+}
+
+.button{
+  display: block;
+  position: relative;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+	padding: 10px;
+  cursor: pointer;
+	text-align: center;
+
+  /* line-height: 64px; */
+  font-family: sans-serif;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.8);
+  ;
+  background-color: transparent;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  font-weight: 900;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  color: #777777;
+  border-color: #777777;
+}
+
+
+canvas{
+	display: inline-block;
+  background-color: #eeeeee;
+  background-size: contain;
+  ;
+}
+.gamepicture{
+	background-image: url("../assets/blueLineView.png");
+}
+.fbpicture{
+	background-image: url("../assets/rinkZone.png");
+}
+
+.periodSelector{
+	/* -moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none; */
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+	padding: 5px;
+  cursor: pointer;
+	text-align: center;
+
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  ;
+  background-color: transparent;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  font-weight: normal;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.periodSelector:hover {
+  color: #777777;
+  border-color: #777777;
+}
+
+#trackerIcon{
+	font-size: 40px;
+	position: relative;
+	width: 100%;
+}
+
+
+@media screen and (max-width: 475px) {
+  .title{
+    font-size: 50px;
+  }
+  .small{
+    font-size: 18px;
+  }
+}
