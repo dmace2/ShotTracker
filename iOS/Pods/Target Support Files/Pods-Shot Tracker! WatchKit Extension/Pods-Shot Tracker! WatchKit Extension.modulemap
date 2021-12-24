@@ -1,0 +1,6 @@
+framework module Pods_Shot_Tracker__WatchKit_Extension {
+  umbrella header "Pods-Shot Tracker! WatchKit Extension-umbrella.h"
+
+  export *
+  module * { export * }
+}
